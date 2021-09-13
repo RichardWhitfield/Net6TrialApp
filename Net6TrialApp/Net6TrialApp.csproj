@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <!--<TargetFramework>net6.0-windows10.0.20348.0</TargetFramework>-->
+    <!--<TargetFramework>netstandard2.0</TargetFramework>-->
+    <!--<TargetFramework>net48</TargetFramework>-->
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Platforms>x64</Platforms>
+    <StartAction>Program</StartAction>
+    <StartProgram>C:\Program Files\Autodesk\Revit 2022\Revit.exe</StartProgram>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Autodesk.Revit.SDK" Version="2022.0.2.392" />
+  </ItemGroup>
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Copy SourceFiles="Net6TrialApp.addin" DestinationFolder="$(AppData)\Autodesk\REVIT\Addins\2022" />
+  </Target>
+
+
+</Project>

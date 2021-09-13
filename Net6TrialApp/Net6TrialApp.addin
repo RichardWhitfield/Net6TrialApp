@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Command">
+    <Text>GetWallNames</Text>
+    <Description>Test project to trial .Net 6 assembly in Revit</Description>
+    <Assembly>Net6TrialApp.dll</Assembly>
+    <FullClassName>Net6TrialApp.Command</FullClassName>
+    <ClientId>4572071e-1c0d-473f-8a89-0d63b33d127e</ClientId>
+    <VendorId>Integraph</VendorId>
+    <VendorDescription>Integraph Pty Ltd</VendorDescription>
+  </AddIn>
+  <AddIn Type="Application">
+    <Name>Application Net6TrialApp</Name>
+    <Assembly>Net6TrialApp.dll</Assembly>
+    <FullClassName>Net6TrialApp.App</FullClassName>
+    <ClientId>c856c141-9e48-4a24-8654-1d9d5dbe91ea</ClientId>
+    <VendorId>Integraph</VendorId>
+    <VendorDescription>Integraph Pty Ltd</VendorDescription>
+  </AddIn>
+</RevitAddIns>
